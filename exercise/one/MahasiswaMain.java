@@ -5,21 +5,22 @@ public class MahasiswaMain {
 public static void main(String[] args) {
 Scanner sc = new Scanner(System.in);
 
+
 System.out.print("input name: ");
-String Nama = sc.nextLine();
+String nama = sc.nextLine();
 
 System.out.print("input NIM: ");
-String NIM = sc.nextLine();
+String nim = sc.nextLine();
 
 System.out.print("input umur: ");
-int Umur = sc.nextInt();
+int umur = sc.nextInt();
 
-MahasiswaMain mhs = new MahasiswaMain();
+Mahasiswa mhs = new Mahasiswa(nama, nim, umur);
 
-System.out.println("\n data mahasiswa,NIM, dan umur:");
-System.out.println("nama "+ Nama);
-System.out.println("NIM "+ NIM);
-System.out.println("umur"+ Umur);
+System.out.println("\ndata mahasiswa,NIM, dan umur:");
+System.out.println("nama "+ mhs.nama);
+System.out.println("NIM "+ mhs.nim);
+System.out.println("umur"+ mhs.umur);
 
 }
     

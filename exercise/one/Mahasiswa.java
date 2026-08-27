@@ -1,13 +1,13 @@
 package exercise.one;
 
-class Mahasiswa{
-    String Nama;
-    String NIM;
-    int Umur;
+public class Mahasiswa{
+    String nama;
+    String nim;
+    int umur;
 
-    public Mahasiswa(String Nama, String NIM, int Umur){
-        this.Nama=Nama;
-        this.NIM=NIM;
-        this.Umur=Umur;
+    public Mahasiswa(String nama, String nim, int umur){
+        this.nama=nama;
+        this.nim=nim;
+        this.umur=umur;
     }
 }

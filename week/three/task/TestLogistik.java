@@ -16,5 +16,9 @@ public class TestLogistik {
         kontainerA.setCap(4000);
         System.out.println("berat muatan saat ini: "+kontainerA.getCap()+ " kg");
 
+        System.out.println("menurunkan berat 500 kg");
+        kontainerA.decreaseWeight(500);
+        System.out.println("berat muatan saat ini: "+ kontainerA.getCap());
+
     }
 }

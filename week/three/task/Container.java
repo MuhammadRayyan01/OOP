@@ -31,6 +31,8 @@ public class Container {
     public void decreaseWeight(int weight){
         if(weight<0){
             System.out.println("sorry, you dont decrease anything");
+        }else if(weight > (0.5*beratMuatanSaatIni)){
+            System.out.println("Sorry, for safety reasons,a single cargo unloading operation cannot exceed 50% of the current load!");
         }else{
             beratMuatanSaatIni-=weight;
         }
@@ -39,3 +41,6 @@ public class Container {
         return beratMuatanSaatIni;
     }
 }
+/*If an operator attempts to unload cargo exceeding this
+50% limit, the system must block the action and display a warning: "Sorry, for safety reasons,
+a single cargo unloading operation cannot exceed 50% of the current load!".*/

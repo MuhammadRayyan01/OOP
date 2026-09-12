@@ -17,12 +17,14 @@ public class TestLogistik {
         kontainerA.setCap(weight); 
         System.out.println("berat muatan saat ini "+kontainerA.getCap()+ " kg");
 
-        System.out.println("memasukkan muatan baru seberat 4000kg");
-        kontainerA.setCap(4000);
+        System.out.println("memasukkan muatan baru seberat:");
+        weight = sc.nextInt();
+        kontainerA.setCap(weight); 
         System.out.println("berat muatan saat ini: "+kontainerA.getCap()+ " kg");
 
         System.out.println("menurunkan berat 5050kg");
-        kontainerA.decreaseWeight(50050);
+        weight = sc.nextInt();
+        kontainerA.decreaseWeight(weight); 
         System.out.println("berat muatan saat ini: "+ kontainerA.getCap());
 
     }

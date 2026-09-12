@@ -28,6 +28,13 @@ public class Container {
             beratMuatanSaatIni+=weight;
         }
     }
+    public void decreaseWeight(int weight){
+        if(weight<0){
+            System.out.println("sorry, you dont decrease anything");
+        }else{
+            beratMuatanSaatIni-=weight;
+        }
+    }
     public int getCap(){
         return beratMuatanSaatIni;
     }

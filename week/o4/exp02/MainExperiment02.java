@@ -5,6 +5,7 @@ public static void main(String[] args) {
     Car m = new Car();
     m.setBrand("Avanza");
     m.setCost(350000);
+    Car a = new Car();
 
     Driver s = new Driver();
     s.setName("John Doe");
@@ -12,7 +13,7 @@ public static void main(String[] args) {
 
     Customer p = new Customer();
     p.setName("Jane Doe");
-    p.setCar(m);
+    p.setCar(a);
     p.setDriver(s);
     p.setDays(2);
 

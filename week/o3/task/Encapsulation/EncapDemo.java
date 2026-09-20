@@ -1,4 +1,4 @@
-package week.three.task.Encapsulation;
+package week.o3.task.Encapsulation;
 
 public class EncapDemo {
     private String name;

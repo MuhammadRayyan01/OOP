@@ -1,4 +1,4 @@
-package week.two.assignment;
+package week.o2.assignment;
 
 public class RentalShop {
     String id,memberName,gameName;

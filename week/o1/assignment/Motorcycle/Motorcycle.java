@@ -1,4 +1,4 @@
-package week.one.assignment.Motorcycle;
+package week.o1.assignment.Motorcycle;
 
 public class Motorcycle extends Bike{
   private String MachineType;

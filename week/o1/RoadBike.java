@@ -1,4 +1,4 @@
-package week.one;
+package week.o1;
 public class RoadBike extends Bike{
     private int tireWidth;
     public void setTireWidth(int width){

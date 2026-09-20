@@ -1,4 +1,4 @@
-package week.one.assignment.Bottle;
+package week.o1.assignment.Bottle;
 
 public class Bottle {
     private String materialType;

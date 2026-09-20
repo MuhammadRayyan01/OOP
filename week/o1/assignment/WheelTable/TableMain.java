@@ -1,4 +1,4 @@
-package week.one.assignment.WheelTable;
+package week.o1.assignment.WheelTable;
 
 public class TableMain  {
     public static void main(String[] args) {

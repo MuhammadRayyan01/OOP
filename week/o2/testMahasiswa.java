@@ -1,4 +1,4 @@
-package week.two;
+package week.o2;
 
 
 public class testMahasiswa {

@@ -1,4 +1,4 @@
-package week.one.assignment.WheelTable;
+package week.o1.assignment.WheelTable;
 
 public class WheelTable extends Table {
     private int totalTire;

@@ -1,4 +1,4 @@
-package week.one;
+package week.o1;
 
 public class Bike {
     private String brand;

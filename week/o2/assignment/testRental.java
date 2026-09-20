@@ -1,4 +1,4 @@
-package week.two.assignment;
+package week.o2.assignment;
 
 public class testRental {
     public static void main(String[] args) {

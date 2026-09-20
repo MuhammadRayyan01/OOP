@@ -1,4 +1,4 @@
-package week.one.assignment.WheelTable;
+package week.o1.assignment.WheelTable;
 
 public class Table {
     private String tableColor;

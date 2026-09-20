@@ -1,4 +1,4 @@
-package week.one;
+package week.o1;
 public class BikeDemo{
     public static void main(String[] args) {
         Bike mountainBike1 = new Bike();

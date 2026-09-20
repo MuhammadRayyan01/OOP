@@ -1,4 +1,4 @@
-package week.one.assignment.Cat;
+package week.o1.assignment.Cat;
 
 public class Cat {
     private String catColor;

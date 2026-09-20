@@ -1,4 +1,4 @@
-package week.one.assignment.Motorcycle;
+package week.o1.assignment.Motorcycle;
 
 public class Bike {
     private String brand;

@@ -1,4 +1,4 @@
-package week.one.assignment.Bottle;
+package week.o1.assignment.Bottle;
 
 public class BottleMain{
     public static void main(String[] args) {

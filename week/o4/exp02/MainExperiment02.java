@@ -19,4 +19,5 @@ public static void main(String[] args) {
     System.out.println("Total Cost = " + p.calculateTotalCost());
     System.out.println(p.getCar().getBrand());
     }
+    
 }

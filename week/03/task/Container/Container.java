@@ -1,4 +1,4 @@
-package week.three.task.Container;
+package week.03.task.Container;
 
 public class Container {
     private int maxCapacity,beratMuatanSaatIni;

@@ -1,4 +1,4 @@
-package week.three;
+package week.o3;
 
 
 public class Anggota {

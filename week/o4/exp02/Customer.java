@@ -40,4 +40,7 @@ public class Customer {
     public int getDays() {
     return days;
     }
+    public int calculateTotalCost() {
+    return car.calculateCarCost(days) + driver.calculateDriverCost(days);
+    }
 }

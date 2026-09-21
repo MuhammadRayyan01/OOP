@@ -13,7 +13,7 @@ public static void main(String[] args) {
 
     Customer p = new Customer();
     p.setName("Jane Doe");
-    p.setCar(a);
+    p.setCar(m);
     p.setDriver(s);
     p.setDays(2);
 

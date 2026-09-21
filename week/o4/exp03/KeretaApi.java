@@ -34,13 +34,15 @@ public class KeretaApi {
     public Pegawai getAsisten() {
     return asisten;
     }
-    
+
     public String info() {
     String info = "";
     info += "Nama: " + this.nama + "\n";
     info += "Kelas: " + this.kelas + "\n";
     info += "Masinis: " + this.masinis.info() + "\n";
+    if(this.asisten != null){
     info += "Asisten: " + this.asisten.info() + "\n";
+    }
     return info;
     }
 

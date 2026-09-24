@@ -2,6 +2,7 @@ package week.o4.exp06;
 
 public class Laptop {
     private String brand;
+    
     public Laptop(String brand){
     this.brand=brand;
     }

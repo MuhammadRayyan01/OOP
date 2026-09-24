@@ -6,11 +6,11 @@ public class AirConditioner {
     private Compressor mainCompressor;
     private Remote mainRemote;
     
-    public AirConditioner(String brand,int productionYear,Compressor comp,Remote rmt){
+    public AirConditioner(String brand,int productionYear,Compressor mainCompressor,Remote mainRemote){
         this.brand=brand;
         this.productionYear=productionYear;
-        this.mainCompressor=comp;
-        this.mainRemote=rmt;
+        this.mainCompressor=mainCompressor;
+        this.mainRemote=mainRemote;
     }
     public void setBrand(String brand){
         this.brand=brand;
@@ -24,4 +24,20 @@ public class AirConditioner {
     public int getProductionYear(){
         return productionYear;
     }
+   // Getter dan Setter untuk mainCompressor
+    public void setMainCompressor(Compressor mainCompressor) {
+        this.mainCompressor = mainCompressor;
+    }
+    public Compressor getMainCompressor() {
+        return mainCompressor;
+    }
+
+    // Getter dan Setter untuk mainRemote
+    public void setMainRemote(Remote mainRemote) {
+        this.mainRemote = mainRemote;
+    }
+    public Remote getMainRemote() {
+        return mainRemote;
+    }
 }
+

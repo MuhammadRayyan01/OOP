@@ -6,7 +6,8 @@ public class Main {
         Remote rmt = new Remote("English", 2);
         AirConditioner ac =  new AirConditioner("Daikin",2019,comp,rmt);
         System.out.println("AC Brand: "+ac.getBrand());
-        System.out.println("compressor capacity: ");
+        System.out.println("compressor capacity: "+ ac.getMainCompressor().getCap());
+        System.out.println("Remote: "+ ac.getMainRemote().getLang());
 
     }
     

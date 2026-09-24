@@ -20,5 +20,6 @@ public class Compressor {
     public int getCap(){
         return capacity;
     }
+
     
 }

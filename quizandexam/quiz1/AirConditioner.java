@@ -6,10 +6,10 @@ public class AirConditioner {
     private Compressor mainCompressor;
     private Remote mainRemote;
     
-    public AirConditioner(String brand,int productionYear,Compressor mainCompressor,Remote rmt){
+    public AirConditioner(String brand,int productionYear,Compressor comp,Remote rmt){
         this.brand=brand;
         this.productionYear=productionYear;
-        this.mainCompressor=mainCompressor;
+        this.mainCompressor=comp;
         this.mainRemote=rmt;
     }
     public void setBrand(String brand){
@@ -23,8 +23,5 @@ public class AirConditioner {
     }
     public int getProductionYear(){
         return productionYear;
-    }
-    public void getMainComponent(){
-        
     }
 }

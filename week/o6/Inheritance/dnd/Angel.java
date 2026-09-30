@@ -1,14 +1,15 @@
 package week.o6.Inheritance.dnd;
 
 public class Angel extends Character{
+    protected int Potion;
     public Angel(String name,int level,int health,int potion){
-        name=name;
-        level=level;
-        health=health;
-        potion=potion;
+        Name = name;
+        Level = level;
+        Health = health;
+        Potion=potion;
     }
     public void cure(Character target){
-        target.health = 100;
-        potion-=1;
+        target.Health = 100;
+        Potion-=1;
     }
 }

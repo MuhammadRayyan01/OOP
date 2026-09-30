@@ -1,17 +1,17 @@
 package week.o6.Inheritance.dnd;
 
 public class Character {
-    protected String name;
-    protected int level;
-    protected int health;
+    protected String Name;
+    protected int Level;
+    protected int Health;
     
     public void attack(Character target){
-        target.health-=10;
+        target.Health-=10;
     }
     public void showStatus(){
-        System.out.println("name: "+name);
-        System.out.println("level: "+level);
-        System.out.println("health: "+health);
+        System.out.println("name: "+Name);
+        System.out.println("level: "+Level);
+        System.out.println("health: "+Health);
     }
     
 }

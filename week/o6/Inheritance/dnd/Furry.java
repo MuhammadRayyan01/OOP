@@ -2,7 +2,7 @@ package week.o6.Inheritance.dnd;
 
 public class Furry extends Character {
 protected int Rage;
-public Furry(String name,int level,int health,int spell,int rage){
+public Furry(String name,int level,int health,int rage){
     Name = name;
     Level= level;
     Health= health;

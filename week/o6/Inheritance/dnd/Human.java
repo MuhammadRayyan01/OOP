@@ -11,6 +11,6 @@ public class Human extends Character {
     }
 
     public void specialAttack(Character target){
-        target.health = target.health - 10 - strength;
+        target.Health = target.Health - 10 - Strength;
     }
 }

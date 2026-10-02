@@ -1,6 +1,7 @@
 package week.o6.Inheritance.exp1;
 
-public class ClassB extends ClassA {
+public class ClassB 
+
     public int z;
 
     public void getNilaiz(){

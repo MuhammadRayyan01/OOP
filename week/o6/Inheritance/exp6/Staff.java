@@ -1,4 +1,4 @@
-package week.o6.Inheritance.exp5;
+package week.o6.Inheritance.exp6;
 
 public class Staff extends Karyawan {
     public int Lembur,Potongan;
@@ -7,7 +7,7 @@ public class Staff extends Karyawan {
 
     }
     public Staff(String name,String address,String jk,int age,int gaji,int lembur,int potongan){
-        super(name,address,jk,age,gaji);
+        super(name,address,age,jk,gaji);
         this.Lembur=lembur;
         this.Potongan=potongan;
     }

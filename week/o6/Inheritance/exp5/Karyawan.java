@@ -19,11 +19,11 @@ public class Karyawan {
         this.Gaji=gaji;
     }
     public void showData(){
-        System.out.println(Name);
-        System.out.println(Address);
-        System.out.println(Age);
-        System.out.println(Jk);
-        System.out.println(Gaji);
+        System.out.println("nama:"+Name);
+        System.out.println("address"+Address);
+        System.out.println("age:"+Age);
+        System.out.println("Gender:"+Jk);
+        System.out.println("Salary:"+Gaji);
     }
     
 }

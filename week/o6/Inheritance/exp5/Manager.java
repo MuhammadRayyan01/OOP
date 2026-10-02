@@ -8,7 +8,7 @@ public class Manager extends Karyawan {
     public void showDataManager(){
         super.showData();
         System.out.println("tunjangan:"+tunjangan);
-        System.out.println("total gaji"+(super.Gaji + tunjangan));
+        System.out.println("total gaji:"+(super.Gaji + tunjangan));
     }
     
 }

@@ -1,6 +1,6 @@
 package week.o6.Inheritance.exp1;
 
-public class ClassB 
+public class ClassB extends ClassA{
 
     public int z;
 
@@ -9,7 +9,7 @@ public class ClassB
 
     }
     public void getJumlah(){
-        System.out.println("jumlah:"+(x+y+z));
+        System.out.println("jumlah:"+(X+Y+z));
     }
 
     

@@ -21,10 +21,8 @@ public class TiketPesawat extends Tiket {
         }
     }
     public void showPesawat(){
-        System.out.println("======tiket pesawat=======");
         super.showTicket();
         System.out.println(BeratBagasi);
         System.out.println(hitungBiayaBagasi());
-        System.out.println("=========================");
     }
 }

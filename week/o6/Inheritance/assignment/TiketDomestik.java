@@ -8,11 +8,13 @@ public class TiketDomestik extends TiketPesawat {
     }
     public TiketDomestik(String kodeTiket,String namaPenumpang,String asal,
         String tujuan, int hargaDasar,String maskapai, int beratBagasi,int pajakBandara){
-        super();
+        super(kodeTiket,namaPenumpang,asal,tujuan,hargaDasar,maskapai,beratBagasi);
         this.PajakBandara=pajakBandara;
         }
     public void showDomestik(){
+        System.out.println("==========DOMESTIK===========");
         this.showPesawat();
         System.out.println("pajak:"+PajakBandara);
+        System.out.println("total bayar:"+(HargaDasar+hitungBiayaBagasi()+PajakBandara));
     }
 }

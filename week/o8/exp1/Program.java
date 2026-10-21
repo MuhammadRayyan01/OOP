@@ -2,7 +2,9 @@ package week.o8.exp1;
 
 public class Program {
     public static void main(String[] args) {
-        Hewan hewan = new Hewan();
+
+        //Hewan hewan = new Hewan();
+        
         Kucing kucingKampung = new Kucing();
         Ikan lumbaLumba = new Ikan();
 

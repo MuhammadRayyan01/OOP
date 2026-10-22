@@ -1,4 +1,4 @@
-package week.o8.exp2;
+package week.o9.exp2;
 
 public class Program {
     public static void main(String[] args) {

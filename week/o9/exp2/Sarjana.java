@@ -1,4 +1,4 @@
-package week.o8.exp2;
+package week.o9.exp2;
 
 public class Sarjana extends Mahasiswa implements ICumlaude{
 public Sarjana(String nama){

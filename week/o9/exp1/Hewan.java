@@ -1,4 +1,4 @@
-package week.o8.exp1;
+package week.o9.exp1;
 
 public abstract class Hewan {
     protected int Age;

@@ -1,0 +1,16 @@
+package week.o8.exp2;
+
+public class Program {
+    public static void main(String[] args) {
+        Rektor pakRektor = new Rektor();
+
+//     Mahasiswa mhsBiasa = new Mahasiswa("Charla");
+        Sarjana sarjanaCumlaude = new Sarjana("Dina");
+        PascaSarjana masterCumlaude = new PascaSarjana("Elak");
+
+//       pakRektor.beriSertifikatCumlaude(mhsBiasa);
+         pakRektor.beriSertifikatCumlaude(sarjanaCumlaude);
+         pakRektor.beriSertifikatCumlaude(masterCumlaude);
+    }
+    
+}

@@ -18,6 +18,6 @@ System.out.println("My GPA is above 3.51");
     }
 @Override 
     public void membuatPublikasiIlmiah(){
-        System.out.println("i made a good publication");
+        System.out.println("i made a won a national publish journal");
     }
 }

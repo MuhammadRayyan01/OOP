@@ -1,13 +1,15 @@
 package week.o9.exp3;
 
-public class Sarjana extends Mahasiswa implements ICumlaude{
+public class Sarjana extends Mahasiswa implements IBerprestasi{
 public Sarjana(String nama){
    super(nama);
 }
-    public void lulus(){
-    System.out.println("i have completed my undergraduate thesis");
+@Override 
+    public void menjuaraiKompetisi(){
+        System.out.println(" i won an competition");
     }
-    public void meraihIPKTertinggi(){
-    System.out.println("my gpa is above 3.51");
+@Override 
+    public void membuatPublikasiIlmiah(){
+        System.out.println("i made a good publication");
     }
 }

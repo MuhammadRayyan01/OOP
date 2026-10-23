@@ -1,4 +1,4 @@
-package week.o9.exp2;
+package week.o9.exp3;
 
 public class Mahasiswa {
     protected String Nama;

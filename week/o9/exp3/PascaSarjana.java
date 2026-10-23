@@ -1,15 +1,17 @@
 package week.o9.exp3;
 
-public class PascaSarjana extends Mahasiswa implements ICumlaude {
+
+public class PascaSarjana extends Mahasiswa implements IBerprestasi {
     public PascaSarjana( String nama){
     super(nama);
     }
     @Override 
-    public void lulus(){
-    System.out.println("I have completed my master thesis");
-    }
+    public void menjuaraiKompetisi(){
+        System.out.println("i have won international competition");
+    }    
     @Override 
-    public void meraihIPKTertinggi(){
-    System.out.println("my GPA is above 3.71");
+    public void membuatPublikasiIlmiah(){
+        System.out.println(" i have published in an international journal");
     }
+    
 }

@@ -12,4 +12,5 @@ public class PascaSarjana extends Mahasiswa implements ICumlaude {
     public void membuatPublikasiIlmiah(){
         System.out.println(" I have published in an international journal");
     }
+    
 }

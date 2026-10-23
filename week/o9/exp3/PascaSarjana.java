@@ -1,9 +1,17 @@
-package week.o9.exp3;
 
 
-public class PascaSarjana extends Mahasiswa implements IBerprestasi {
+public class PascaSarjana extends Mahasiswa implements ICumlaude,IBerprestasi {
     public PascaSarjana( String nama){
     super(nama);
+    }
+    @Override 
+    public void lulus(){
+         System.out.println("i graduated with honors"); 
+    }
+    @Override 
+    public void meraihIPKTertinggi(){ 
+        System.out.println("i achieved the highest GPA"); 
+
     }
     @Override 
     public void menjuaraiKompetisi(){

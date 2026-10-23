@@ -1,4 +1,3 @@
-package week.o9.exp3;
 
 public class Rektor {
     public void beriSertifikatCumlaude(ICumlaude sarjanaCumlaude){
@@ -10,11 +9,12 @@ public class Rektor {
 
         System.out.println("-------------------------------");
     }
+    
     public void beriSertifikatMawapres(IBerprestasi mahasiswaBerprestasi) {  
-    System.out.println("I am the RECTOR, granting a MAWAPRES award.");  
-    System.out.println("Congratulations! How did you achieve this?"); 
-    mahasiswaBerprestasi.menjuaraiKompetisi(); 
-    mahasiswaBerprestasi.membuatPublikasiIlmiah(); 
-    System.out.println("---------------------------------");
-    }
+        System.out.println("I am the RECTOR, granting a MAWAPRES award.");  
+        System.out.println("Congratulations! How did you achieve this?"); 
+        mahasiswaBerprestasi.menjuaraiKompetisi(); 
+        mahasiswaBerprestasi.membuatPublikasiIlmiah(); 
+        System.out.println("---------------------------------");
+        }
 }

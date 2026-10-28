@@ -9,6 +9,9 @@ public class Manusia {
         else if(x instanceof Pisang){
             System.out.println("pisang dikupas terlebih dahulu");
             ((Pisang)x).tampilkanKulit();
+        } else if (x instanceof Durian){
+            System.out.println("The way to eat durian is to cut it open first");
+            ((Durian)x).tampilkanDuri();
         }
         System.out.println("rasanya "+ x.Rasa);
     }

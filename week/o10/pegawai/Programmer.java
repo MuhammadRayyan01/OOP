@@ -5,6 +5,7 @@ private int Bonus;
 public Programmer(String nama,int gaji, int bonus){
     super(nama,gaji);  
     }
+@Override 
 public int getGaji(){
     return Gaji;
 }    

@@ -7,6 +7,7 @@ public Manajer (String nama, int gaji, int tunjangan){
     super(nama, gaji);
     this.Tunjangan= tunjangan;
 }
+@Override 
 public int getGaji(){
 return Gaji;
 }

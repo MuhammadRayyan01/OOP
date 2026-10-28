@@ -9,8 +9,9 @@ public Manajer (String nama, int gaji, int tunjangan){
 }
 public int getGaji(){
 return Gaji;
+}
 public int getTunjangan(){
 return Tunjangan;
 }
-}
+
 }

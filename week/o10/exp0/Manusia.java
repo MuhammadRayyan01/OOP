@@ -14,6 +14,7 @@ public class Manusia {
             ((Durian)x).tampilkanDuri();
         }
         System.out.println("rasanya "+ x.Rasa);
+        System.out.println("water content: "+ x.Water);
     }
     
 }

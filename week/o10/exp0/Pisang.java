@@ -1,6 +1,6 @@
 package o10.exp0;
 
-public class Pisang {
+public class Pisang extends Buah{
     public Pisang(){
         Rasa = "sepet";
     }

@@ -3,6 +3,7 @@ package o10.exp0;
 public class Durian extends Buah {
     public Durian(){
         Rasa="manis dan gurih";
+        Water = 80;
     }
     public void makanBuah(){
         System.out.println();

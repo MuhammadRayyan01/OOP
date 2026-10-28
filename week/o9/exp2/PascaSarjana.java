@@ -5,11 +5,11 @@ public class PascaSarjana extends Mahasiswa implements ICumlaude {
     super(nama);
     }
     @Override 
-    public void menjuaraiKompetisi(){
+    public void lulus(){
     System.out.println(" i have won an International competition"); 
     }
     @Override 
-    public void membuatPublikasiIlmiah(){
+    public void meraihIPKTertinggi(){
         System.out.println(" I have published in an international journal");
     }
     

@@ -1,6 +1,6 @@
 package week.o9.exp2;
-public abstract interface ICumlaude {
+public interface ICumlaude {
     public abstract void lulus();
-    public abstract void meraihIPKTertinggi();
+    public abstract void meraihIPKTertinggi(); // 2 method harus di pakai kalau diimplementasikan
 
 }

@@ -5,8 +5,11 @@ public class TestBuah {
         Manusia ilham = new Manusia();
         Apel myApel = new Apel();
         Pisang myPisang = new Pisang();
+        Durian duren = new Durian();
         ilham.makanBuah(myApel);
         System.out.println("----------------------");
         ilham.makanBuah(myPisang);
+        System.out.println("----------------------");
+        ilham.makanBuah(duren);
     }
 }

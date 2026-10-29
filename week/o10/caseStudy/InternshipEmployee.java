@@ -4,7 +4,7 @@ public class InternshipEmployee extends Employee{
     private int Length;
 
     public InternshipEmployee(String name, int length){
-        super(name);
+        this.Name=name;
         this.Length=length;
     }
     public void setLength(int length){
@@ -13,9 +13,11 @@ public class InternshipEmployee extends Employee{
     public int getLength(){
         return Length;
     }
+    @Override 
     public String getEmployeeInfo(){
-    super.getEmployeeInfo();
-    return Name;
+        String info = super.getEmployeeInfo()+"\n";
+        info += "Registered as internship for employee for "+Length+ " month/s\n";
+    return info;
 
     }
 }

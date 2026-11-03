@@ -11,6 +11,8 @@ public class Tester1 {
         e = iEmp;
         p = pEmp;
         p = eBill;
+        p = iEmp;
+        e = eBill;
 
         System.out.println(e.getEmployeeInfo());
         System.out.println(p.getPaymentAmount());

@@ -1,4 +1,4 @@
-package week.o10.exp2;
+package week.o10.exp4;
 
 public class InternshipEmployee extends Employee{
     private int Length;

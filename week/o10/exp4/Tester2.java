@@ -1,4 +1,4 @@
-package week.o10.exp2;
+package week.o10.exp4;
 
 public class Tester2 {
     public static void main(String[] args) {

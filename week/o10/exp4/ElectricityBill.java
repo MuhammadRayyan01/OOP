@@ -1,4 +1,4 @@
-package week.o10.exp2;
+package week.o10.exp4;
 
 public class ElectricityBill implements Payable {
     private int Kwh;

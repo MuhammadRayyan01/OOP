@@ -1,7 +1,4 @@
-package week.o10.exp2;
-
-import week.o10.exp2.ElectricityBill;
-import week.o10.exp2.InternshipEmployee;
+package week.o10.exp4;
 
 public class Tester3 {
     public static void main(String[] args) {

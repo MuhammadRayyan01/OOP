@@ -1,4 +1,4 @@
-package week.o10.exp2;
+package week.o10.exp4;
 
 public class PermanentEmployee extends Employee implements Payable{
     private int Salary;

@@ -1,14 +1,12 @@
 package week.o10.exp3;
 
-public class Tester2 {
-    public static void main(String[] args) {
-        PermanentEmployee pEmp= new PermanentEmployee("Dedik", 500);
-        Employee e;
-        e = pEmp;
-       
+import week.o10.exp2.InternshipEmployee;
 
-        System.out.println(e.getEmployeeInfo());
-        System.out.println(pEmp.getEmployeeInfo());
+public class Tester3 {
+    public static void main(String[] args) {
+        PermanentEmployee pEmp = new PermanentEmployee("Dedik", 500);
+        InternshipEmployee iEmp = new InternshipEmployee("Sunarto", 5);
+        Elec
     }
     
 }

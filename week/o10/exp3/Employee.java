@@ -1,4 +1,4 @@
-package week.o10.exp2;
+package week.o10.exp3;
 
 public class Employee {
     protected String Name;

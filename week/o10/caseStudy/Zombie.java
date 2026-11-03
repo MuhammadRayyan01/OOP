@@ -1,18 +1,23 @@
 package o10.caseStudy;
 
-public class Zombie implements Destroyable {
+public abstract class Zombie implements Destroyable {
     protected int Health;
-    protected int Level;
+    protected final int Level;
 
-    public void heal(){
-
+    protected Zombie(int health, int level) {
+        Health = Math.max(0, health);
+        Level = level;
     }
-    @Override 
-    public void destroyed(){
 
-    }
-    public void getZombie(){
+    public int getHealth() { return Health; }
+    public int getLevel() { return Level; }
 
+    public void heal() { Health = Math.min(100, Health + 10); }
+
+    @Override public void destroyed() { Health = Math.max(0, Health - damagePerHit()); }
+    protected abstract int damagePerHit();
+
+    public String getZombieInfo() {
+        return getClass().getSimpleName() + " Data =\nHealth = " + Health + "\nLevel = " + Level;
     }
-    
 }

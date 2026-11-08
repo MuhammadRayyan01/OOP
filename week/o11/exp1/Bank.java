@@ -32,11 +32,21 @@ public class Bank {
 
     public void processMonthEnd() {
      for(Account acc : accounts.values()){
-    if(acc instanceof InterestBearing bearing){
-        bearing.applyInterest();
-        System.out.println(acc.getAccountNumber()+" interest applied, new balance: "+ acc.getBalance());
+        if(acc instanceof InterestBearing bearing){
+            bearing.applyInterest();
+            System.out.println(acc.getAccountNumber()+" interest applied, new balance: "+ acc.getBalance());
     }
     System.out.println(acc.getAccountNumber()+" monthly fee: "+acc.monthlyFee());
+        }
+    }
+    public void printHistory(String accountNumber){
+        Account acc = findAccount(accountNumber);
+        if(acc == null){
+            System.out.println("account not found "+ accountNumber);
+            return;
+        }
+        for(Transaction t : acc.getHistory()){
+            System.out.println(accountNumber+" "+t);
         }
     }
 }

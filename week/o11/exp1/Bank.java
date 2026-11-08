@@ -1,52 +1,66 @@
 package exp1;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class Bank {
-    private Map<String, Account> accounts = new LinkedHashMap<>();
-    
+    private final AccountRepository repository;
+
+    public Bank() {
+        this(new InMemoryAccountRepository());
+    }
+
+    public Bank(AccountRepository repository) {
+        this.repository = repository;
+    }
 
     public boolean addAccount(Account account) {
-        if (accounts.containsKey(account.getAccountNumber())){
+        if (repository.findByNumber(account.getAccountNumber()) != null) {
             return false;
         }
-        accounts.put(account.getAccountNumber(),account);
+        repository.save(account);
         return true;
     }
 
     public Account findAccount(String accountNumber) {
-        return accounts.get(accountNumber);
+        return repository.findByNumber(accountNumber);
     }
 
     public void printAllAccounts() {
-        for ( Account acc : accounts.values()){
+        for (Account acc : repository.findAll()) {
             acc.printInfo();
         }
     }
 
     public void printMonthlyFees() {
-     for( Account acc : accounts. values()){
-        System.out.println(acc.getAccountNumber()+" fee: "+ acc.monthlyFee());
-     }
+        for (Account acc : repository.findAll()) {
+            System.out.println(acc.getAccountNumber() + " fee: " + acc.monthlyFee());
+        }
     }
 
     public void processMonthEnd() {
-     for(Account acc : accounts.values()){
-        if(acc instanceof InterestBearing bearing){
-            bearing.applyInterest();
-            System.out.println(acc.getAccountNumber()+" interest applied, new balance: "+ acc.getBalance());
-    }
-    System.out.println(acc.getAccountNumber()+" monthly fee: "+acc.monthlyFee());
+        for (Account acc : repository.findAll()) {
+            if (acc instanceof InterestBearing bearing) {
+                bearing.applyInterest();
+                System.out.println(acc.getAccountNumber() + " interest applied, new balance: " + acc.getBalance());
+            }
+            System.out.println(acc.getAccountNumber() + " monthly fee: " + acc.monthlyFee());
         }
     }
-    public void printHistory(String accountNumber){
+
+    public double totalAssets() {
+        double total = 0;
+        for (Account acc : repository.findAll()) {
+            total += acc.getBalance();
+        }
+        return total;
+    }
+
+    public void printHistory(String accountNumber) {
         Account acc = findAccount(accountNumber);
-        if(acc == null){
-            System.out.println("account not found "+ accountNumber);
+        if (acc == null) {
+            System.out.println("account not found " + accountNumber);
             return;
         }
-        for(Transaction t : acc.getHistory()){
-            System.out.println(accountNumber+" "+t);
+        for (Transaction t : acc.getHistory()) {
+            System.out.println(accountNumber + " " + t);
         }
     }
 }

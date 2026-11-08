@@ -1,15 +1,22 @@
 package exp1;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public abstract class Account {
-    private String accountNumber;
-    private Customer owner;
+    private final String accountNumber;
+    private final Customer owner;
     private double balance;
+
+    private final List<Transaction> history = new ArrayList<>();
 
     public Account(String accountNumber, Customer owner, double balance) {
         this.accountNumber = accountNumber;
         this.owner = owner;
         this.balance = balance;
     }
+
+
 
     public String getAccountNumber() {
         return accountNumber;
@@ -23,11 +30,16 @@ public abstract class Account {
         return balance;
     }
 
+    public List<Transaction> getHistory() {
+        return Collections.unmodifiableList(history);
+    }
+
     public boolean deposit(double amount) {
         if (amount <= 0) {
             return false;
         }
         balance += amount;
+        history.add(new Transaction("DEPOSIT", amount));
         return true;
     }
 
@@ -45,6 +57,7 @@ public abstract class Account {
                     accountNumber + ": insufficient balance for a withdrawal of " + amount);
         }
         balance -= amount;
+        history.add(new Transaction("WITHDRAW", amount));
     }
 
     protected boolean canWithdraw(double amount) {

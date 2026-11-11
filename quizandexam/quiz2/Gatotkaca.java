@@ -1,10 +1,10 @@
 package quizandexam.quiz2;
 
 public class Gatotkaca extends Hero {
-public int Level;
-public Gatotkaca (String nama, int level){
+public int Speed;
+public Gatotkaca (String nama, int speed){
     this.Nama=nama;
-    this.Level=level;
+    this.Speed=speed;
 }    
 public void attack(Killable ka){
     if(ka instanceof Evil){
